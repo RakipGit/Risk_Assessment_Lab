@@ -85,7 +85,6 @@ Developed a Python script that processes Nessus and Advanced IP Scanner HTML exp
 The script accepts: A Nessus Vulnerabilities HTML report, a Nessus Operating Systems HTML report and a Advanced IP Scanner HTML report.
 
 and it generates four Excel files: 
-
 | Deliverable                          | Purpose                                                        |
 | ------------------------------------ | -------------------------------------------------------------- |
 | Asset Inventory                      | Lists discovered assets and classifies asset types             |
@@ -93,6 +92,14 @@ and it generates four Excel files:
 | Information Security Risk Assessment | Converts findings into risk scores and ratings                 |
 | Risk Treatment Plan                  | Provides recommended treatment actions and reassessment fields |
 
+The script uses a generic CVSS:
+| CVSS / Severity     | Likelihood | Impact | Risk Score | Risk Rating   | Suggested Action        |
+| ------------------- | ---------- | ------ | ---------- | ------------- | ----------------------- |
+| Critical / 9.0–10.0 | 5          | 5      | 25         | Critical      | Immediate remediation   |
+| High / 7.0–8.9      | 4          | 5      | 20         | High          | Prioritised remediation |
+| Medium / 4.0–6.9    | 3          | 3      | 9          | Medium        | Planned remediation     |
+| Low / 0.1–3.9       | 2          | 2      | 4          | Low           | Accept or remediate     |
+| Informational / 0.0 | 1          | 1      | 1          | Informational | Monitor                 |
 
 ---
 
