@@ -67,3 +67,23 @@ The collection process used administrator credentials and gathered detailed info
 This scan provided a broader asset management view than just a network discovery alone.
 
 ---
+
+### 4. Vulnerability Scanning with Tenable Nessus 
+
+Performed a vulnerability basic scan on the subnet: `192.168.10.0/24`. After the scan, I exported Nessus the below HTML reports:
+
+a) Vulnerabilities report
+b) Operating Systems report
+c) Software Vulnerabilities report
+
+---
+
+### 5. Python Reporting Automation
+
+Developed a Python script that processes Nessus and Advanced IP Scanner HTML exports and automatically creates GRC style Excels that are ready to present to the organization the risk assessment is done for.
+
+The script accepts: Nessus Vulnerabilities HTML report, Nessus Operating Systems HTML report, Advanced IP Scanner HTML report
+Optional JSON risk-overrides file for organisation-specific scoring
+
+---
+
