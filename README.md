@@ -40,10 +40,10 @@ The lab was built in **Hyper-V** and consisted of an assessment workstation, a K
 | `VM-AUDIT`  | Windows 10  Pro               | Main risk assessment workstation used for Advanced IP Scanner, Total Network Inventory 6, Tenable Nessus Essentials, Python automation, and Excel report review |
 | `Kali Linux VM`  | Kali Linux                  | Internal penetration testing VM used for host discovery, Nmap enumeration, SMB validation, MAC flooding, MITM testing                     |
 | `FSASKISI2`      | Windows Server 2019 VM | Intentionally vulnerable test target used for SMB Guest-access validation, shared-folder testing, and traffic capture                                           |
-| `DCASKISI`       | Windows Server 2019         | Active Directory Domain Controller exposing domain services such as LDAP, Kerberos, DNS, SMB, RDP, and WinRM                                                    |
-| `WinAsk10`       | Windows 10 Pro              | Internal endpoint used for service enumeration, SMB configuration assessment, and vulnerability scanning                                                        |
-| `dvls-server`    | Windows Server 2019           | Internal server used for authenticated vulnerability scanning and service enumeration                                                                           |
-| `VM-ADMIN-RDM`   | Windows VM                  | Internal endpoint used for SMB, WinRM, and general service-enumeration assessment                                                                               |
+| `DCASKISI`       | Windows Server 2019         | Active Directory Domain Controller exposing domain services such as LDAP, Kerberos, DNS, SMB, RDP, and WinRM                                                   |
+| `WinAsk10`       | Windows 10 Pro               | Internal endpoint used for service enumeration, SMB configuration assessment, and vulnerability scanning                                                       |
+| `dvls-server`    | Windows Server 2019           | Internal server used for authenticated vulnerability scanning and service enumeration                                                                         |
+| `VM-ADMIN-RDM`   | Windows VM 2019               | Internal endpoint used for SMB, WinRM, and general service-enumeration assessment                                                                             |
 
 ---
 ## What I Did
