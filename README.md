@@ -41,4 +41,29 @@ Asset Discovery: Inventory Collection -> Vulnerability Scanning -> Automated Ris
 ---
 ## What I Did
 
-Created a Windows 10 virtual machine in Hyper-V to use as the main assessment workstation.
+### 1. VM-AUDIT Setup
+
+Created a Windows 10 virtual machine in Hyper-V to use as the main assessment workstation. Installed and used: 
+a) Advanced IP Scanner
+b) Total Network Inventory
+c) Tenable Nessus Essentials
+d) Python and the Python libraries for report generation
+e) LibreOffice for reviewing the generated xlsx files
+
+---
+
+### 2. Network Discovery with Advanced IP Scanner
+
+Used Advanced IP Scanner to identify active systems within the internal subnet. The scan was used to identify: IP addresses, Hostnames, MAC addresses, Device manufacturers and Available systems in the network.
+
+The results were exported as a HTML and later used by the Python reporting script to support Asset Inventory excel creation.
+
+---
+
+### 3. Asset Inventory Collection with Total Network Inventory
+
+The collection process used administrator credentials and gathered detailed information such as: Operating Systems, Computer Names, Hardware and Software Informations.
+
+This scan provided a broader asset management view than just a network discovery alone.
+
+---
