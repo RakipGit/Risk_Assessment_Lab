@@ -82,8 +82,19 @@ c) Software Vulnerabilities report
 
 Developed a Python script that processes Nessus and Advanced IP Scanner HTML exports and automatically creates GRC style Excels that are ready to present to the organization the risk assessment is done for.
 
-The script accepts: Nessus Vulnerabilities HTML report, Nessus Operating Systems HTML report, Advanced IP Scanner HTML report
-Optional JSON risk-overrides file for organisation-specific scoring
+The script accepts: A Nessus Vulnerabilities HTML report, a Nessus Operating Systems HTML report and a Advanced IP Scanner HTML report.
+
+and it generates four Excel files: 
+
+| Deliverable                          | Purpose                                                        |
+| ------------------------------------ | -------------------------------------------------------------- |
+| Asset Inventory                      | Lists discovered assets and classifies asset types             |
+| Threat Catalogue                     | Lists actionable vulnerability findings by severity            |
+| Information Security Risk Assessment | Converts findings into risk scores and ratings                 |
+| Risk Treatment Plan                  | Provides recommended treatment actions and reassessment fields |
+
 
 ---
+
+### 6. 
 
