@@ -104,8 +104,12 @@ The script uses a generic CVSS:
 
 ### 6. Kali Linux to perform Internal Host Discovery and Service Detection
 
-Used Nmap to identify: Active systems, Open ports, Running services, Service versions, Hostnames, SMB exposure, RDP exposure and WinRM exposure.
+Used Kali Linux and Nmap to perform internal host discovery and service enumeration within the lab subnet. First, I performed a host discovery scan across 192.168.10.0/24 to identify live systems. The results were exported to host-discovery.txt for review and documentation.
+
+I then performed targeted service enumeration against selected 5 hosts. The scan identified open ports, running services, service versions, and SMB security settings.
 
 Examples of identified services: SMB — TCP/445, RDP — TCP/3389, WinRM — TCP/5985, LDAP — TCP/389, LDAPS — TCP/636, Kerberos — TCP/88 and TCP/464 and HTTP services.
+
+The service results were exported to services-scan-target.txt and used to identify systems and services for further internal security validation, including SMB access checks.
 
 ---
