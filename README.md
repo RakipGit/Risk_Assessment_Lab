@@ -83,7 +83,7 @@ c) Software Vulnerabilities report
 Developed a Python script that processes Nessus and Advanced IP Scanner HTML exports and automatically creates GRC style Excels that are ready to present to the organization the risk assessment is done for.
 
 The script accepts: A Nessus Vulnerabilities HTML report, a Nessus Operating Systems HTML report and a Advanced IP Scanner HTML report <br>
-and it generates four Excel files: 
+and it generates 4 Excel files: 
 | Deliverable                          | Purpose                                                        |
 | ------------------------------------ | -------------------------------------------------------------- |
 | Asset Inventory                      | Lists discovered assets and classifies asset types             |
@@ -102,5 +102,10 @@ The script uses a generic CVSS:
 
 ---
 
-### 6. 
+### 6. Kali Linux to perform Internal Host Discovery and Service Detection
 
+Used Nmap to identify: Active systems, Open ports, Running services, Service versions, Hostnames, SMB exposure, RDP exposure and WinRM exposure.
+
+Examples of identified services: SMB — TCP/445, RDP — TCP/3389, WinRM — TCP/5985, LDAP — TCP/389, LDAPS — TCP/636, Kerberos — TCP/88 and TCP/464 and HTTP services.
+
+---
