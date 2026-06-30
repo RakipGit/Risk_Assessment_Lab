@@ -117,6 +117,7 @@ The service results were exported to services-scan-target.txt and used to identi
 ### 7. SMB Enumeration and Guest Access 
 
 Performed SMB enumeration against systems exposing TCP/445. The checks included: 
+
 a) SMB signing status and SMBv1 status
 b) Hostname and domain information
 c) Guest account access behaviour
