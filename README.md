@@ -240,6 +240,22 @@ The Excel deliverables translate technical findings into prioritised risks and t
 ![TNI Scan Setup](images/TN4.png)
 ![TNI Results](images/REPORT-TNI.png)
 
+
+### 5. Performing authenticated vulnerability scanning with Tenable Nessus.
+
+I FORGOT TO TAKE SCREENSHOTS :)...you can navigate to my other project named: ` VulnerabilityManagement_TenableNessusPro_Lab ` and see a step by step guide on how to create scans in tenable.
+
+For this scan the steps were: New Scan > Basic scan > added the subnet 192.168.19.0/24 as the target and then executed the scan.
+
+After the scan was completed, I exported these 3 html reports: 
+- Vulnerabilities.html
+- Operatingsystem.html
+- Softwarevulnerabilities.html
+
+
+
+
+
 </details>
 
 ---
