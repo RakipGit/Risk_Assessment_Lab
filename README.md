@@ -368,13 +368,18 @@ Wireshark was opened on the target VM, `FsAskisi` = `192.168.10.99`, during the 
 The ICMP flood test was performed from the Kali Linux VM using Hping3 against `FsAskisi` = `192.168.10.99`. Wireshark was running on the target VM during the test and captured a sustained stream of ICMP Echo Request packets, confirming that the high volume ICMP traffic reached the target system.
 
 ![ICMP Flood Command](images/normal-DoS.png)
+
+You can use --flood to make the attack more powerfull and quick: 
+
 ![ICMP Flood Command](images/DoS-flooging-start.png)
 
-Wireshark results
+Wireshark results:
+
 ![ICMP Flood Wireshark Capture](images/wireshark-DoS-results.png)
 
 
-Stopping the attack
+Stopping the attack:
+
 ![ICMP Flood Command](images/DoS-flooding-end.png)
 
 
