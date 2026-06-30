@@ -216,16 +216,16 @@ The Excel deliverables translate technical findings into prioritised risks and t
 <details>
 <summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
 
-### 1. Installing Windows Server 2019 for the Domain Controller and Windows 10  for the client VM.
+### 1.  Preparing the Windows assessment VM and installing the assessment tools.
 
-![Windows Server Installation](images/WindowsServer2019.png)
-![Windows 10 Installation](images/Windows10.png)
+![Tools Installation](images/IPSCAN.png)
+![Tools Installation](images/TNI.png)
+![Tools Installation](images/Tenable.png)
 
 ### 2. Hyper-V VM Domain Controller Creation.
 
 ![VM Creation](images/DC.png)
-![VM Creation](images/DC2.png)
-![VM Creation](images/DC3.png)
+
 
 
 
