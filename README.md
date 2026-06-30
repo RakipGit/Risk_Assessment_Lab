@@ -270,7 +270,7 @@ Then, into cmd I navigated into the file path and I downloaded the required pyth
 ![Python Script Execution](images/CMD1-PACKET.png)
 ![Python Script Execution](images/CMD2-PACKET.png)
 
-#### And finally run the command: `py -3.11 excel_parser.py --vulnerabilities "RAKIP_vulnerbilities.html" --os "RAKIP_operating_systems.html" --advip "RAKIP_adv-ip_scan.html" --out-prefix "RAKIP" ` that calls the html reports and generates the new excel files with the information the called files got.
+And finally run the command: `py -3.11 excel_parser.py --vulnerabilities "RAKIP_vulnerbilities.html" --os "RAKIP_operating_systems.html" --advip "RAKIP_adv-ip_scan.html" --out-prefix "RAKIP" ` that calls the html reports and generates the new excel files with the information the called files got.
 ![Python Script Execution](images/CMD-RUNCODE.png)
 
 ### 7. Reviewing the generated Excel deliverables.
@@ -286,9 +286,18 @@ Asset Inventory Excel
 
 
 
-![Threat Catalogue Report](images/ThreatCatalogue.png)
-![Risk Assessment Report](images/RiskAssessment.png)
-![Risk Treatment Plan](images/RiskTreatmentPlan.png)
+![Threat Catalogue Report](images/threatexcel1.png)
+![Threat Catalogue Report](images/threatexcel2.png)
+![Threat Catalogue Report](images/threatexcel3.png)
+![Threat Catalogue Report](images/threatexcel4.png)
+
+
+
+
+
+
+![Risk Assessment Report](images/threatexcel1.png)
+![Risk Treatment Plan](images/threatexcel1.png)
 
 
 </details>
