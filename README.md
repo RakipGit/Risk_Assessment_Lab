@@ -147,7 +147,7 @@ b) Started Wireshark on the target machine, `FsAskisi`, before launching the att
 
 c) Ran the following command on the Kali Linux VM cmd:<br> 
 ```bash 
-sudo macof -i eth0`
+sudo macof -i eth0
 ```
 
 The command generated Ethernet frames with changing source MAC addresses.
