@@ -114,7 +114,7 @@ The service results were exported to services-scan-target.txt and used to identi
 
 ---
 
-### 7. 
+### 7. SMB Enumeration and Guest Access 
 
 Performed SMB enumeration against systems exposing TCP/445. The checks included: 
 a) SMB signing status and SMBv1 status
@@ -126,4 +126,25 @@ e) Read permissions on the exposed shares
 This demonstrated that overly Guest access and share permissions can expose internal data to unauthorised users on the same network. Some systems returned NT_STATUS_ACCESS_DENIED, showing that SMB was available but anonymous share enumeration was restricted.
 
 --- 
+
+
+### 8. MAC Flooding Attack Demonstration
+
+Performed a controlled MAC flooding attack from Kali Linux against the `FsAskisi` VM environment.
+
+Steps followed to demonstrate the attack: 
+a) Enabled MAC address spoofing on the Kali Linux VM.
+b) Started Wireshark on the target machine, `FsAskisi`, before launching the attack.
+c) Ran the following command on the cmd: `sudo macof -i eth0` on Kali Linux<br>
+The command generated Ethernet frames with changing source MAC addresses.
+d) Observed and captured the resulting ARP broadcasts and abnormal incoming in Wireshark on `FsAskisi`.
+
+The MAC flooding test was performed to demonstrate how an internal attacker could generate large volumes of Ethernet traffic with changing source MAC addresses and create abnormal  activity in the network. This highlights the importance of implementing switch level controls such as limiting the number of MAC addresses allowed per port, allowing only approved MAC addresses where appropriate, monitoring abnormal MAC address activity through IDS or network monitoring, and using VLAN segmentation to reduce the impact of unauthorised internal traffic.
+
+----
+
+### 9. 
+
+
+
 
