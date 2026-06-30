@@ -249,8 +249,16 @@ For this scan the steps were: New Scan > Basic scan > added the subnet 192.168.1
 
 After the scan was completed, I exported these 3 html reports: 
 - Vulnerabilities.html
-- Operatingsystem.html
-- Softwarevulnerabilities.html
+![Nessus HTML Exports](images/vulne-html.png)
+![Nessus HTML Exports](images/vulne-html2.png)
+
+- Operating-system.html
+![Nessus HTML Exports](images/os-html.png)
+![Nessus HTML Exports](images/os-html2.png)
+
+- Software-vulnerabilities.html
+![Nessus HTML Exports](images/soft-html.png)
+
 
 
 
