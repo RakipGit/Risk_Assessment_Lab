@@ -402,6 +402,7 @@ Stopping the attack:
 
 The default gateway of the attacked VM `FsAskisi` = `192.168.10.99` is now attached to the MAC of our Kali Linux VM.
 
+![Ettercap MITM Setup](images/kali-info.png)
 ![Ettercap MITM Setup](images/arp-a-mitm-results.png)
 
 
