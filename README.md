@@ -114,7 +114,19 @@ Used Kali Linux and Nmap to perform internal host discovery and service enumerat
 
 I then performed targeted service enumeration against selected 5 hosts. The scan identified open ports, running services, service versions, and SMB security settings.
 
-Examples of identified services: SMB — TCP/445, RDP — TCP/3389, WinRM — TCP/5985, LDAP — TCP/389, LDAPS — TCP/636, Kerberos — TCP/88 and TCP/464 and HTTP services.
+Examples of identified services: 
+
+SMB - TCP/445 
+
+RDP - TCP/3389
+
+WinRM - TCP/5985 
+
+LDAP - TCP/389 
+
+LDAPS - TCP/636 
+
+Kerberos - TCP/88 and TCP/464 and HTTP services.
 
 The service results were exported to services-scan-target.txt and used to identify systems and services for further internal security validation, including SMB access checks.
 
