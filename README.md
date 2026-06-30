@@ -316,7 +316,7 @@ Risk Assesment Excel
 ![kali-linux](images/kali4.png)
 ![kali-linux](images/kali5.png)
 
-### 8. Creating a second .txt to save service informations only about the 5 VMs of my network so I can do the pen testing on them.
+### 9. Creating a second .txt to save service informations only about the 5 VMs of my network so I can do the pen testing on them.
 
 ![KALI-VM-IP](images/kali6.png)
 ![KALI-VM-IP](images/servicestxt.png)
