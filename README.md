@@ -385,13 +385,21 @@ Stopping the attack:
 ### 15. MITM attack with Ettercap.
 
 [Ettercap MITM Setup](images/ett1.png)
+
 [Ettercap MITM Setup](images/ett2-searchhost.png)
+
 [Ettercap MITM Setup](images/ett3-searchhost.png)
+
 [Ettercap MITM Setup](images/ett4-hostmenu.png)
+
 [Ettercap MITM Setup](images/ett5a-addtarget.png)
+
 [Ettercap MITM Setup](images/ett5b-chooseattack.png)
+
 [Ettercap MITM Setup](images/ett5-hostmenu.png)
+
 [Ettercap MITM Setup](images/ett6-attack.png)
+
 [Ettercap MITM Setup](images/arp-a-mitm-results.png)
 
 
