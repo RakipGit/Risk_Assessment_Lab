@@ -222,10 +222,11 @@ The Excel deliverables translate technical findings into prioritised risks and t
 ![Tools Installation](images/TNI.png)
 ![Tools Installation](images/Tenable.png)
 
-### 2. Hyper-V VM Domain Controller Creation.
+### 2. Identifying the internal subnet and preparing the scan scope.
 
-![VM Creation](images/DC.png)
+![VM Creation](images/IP-AUDIT.png)
 
+### 3. Discovering active assets with Advanced IP Scanner.
 
 
 
