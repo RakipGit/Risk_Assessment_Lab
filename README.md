@@ -254,7 +254,7 @@ The Excel deliverables translate technical findings into prioritised risks and t
 - Vulnerability Prioritisation using CVSS 
 - Python Automation to Convert Nessus HTML Exports into presentation ready Excel Risk Assessment Reports
 - Risk Assessment and Risk Treatment Planning
-- Penetration Testing: SMB Access Validation, MAC Flooding, ICMP Flooding, and MITM
+- Penetration Testing: SMB Access Validation, MAC Flooding, DoS ICMP Flooding, and MITM
 - Wireshark packet capture and Network Traffic Analysis
 
 ---
