@@ -301,7 +301,12 @@ Risk Treatment Excel
 
 
 Risk Assesment Excel
-![Risk Assessment Report](images/threatexcel1.png)
+![Risk Assessment Report](images/riskexcel1.png)
+![Risk Assessment Report](images/riskexcel2.png)
+![Risk Assessment Report](images/riskexcel3.png)
+![Risk Assessment Report](images/riskexcel4.png)
+![Risk Assessment Report](images/riskexcel5.png)
+![Risk Assessment Report](images/riskexcel6.png)
 
 
 
