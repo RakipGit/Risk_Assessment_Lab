@@ -176,7 +176,7 @@ The MAC flooding test was performed to demonstrate how an internal attacker coul
 
 ### 9. DoS Attack Demonstration
 
-A controlled ICMP Flood Denial of Service attack was performed from the Kali Linux VM against FsAskisi to assess how excessive ICMP traffic could affect a host and the network availability.
+A controlled ICMP Flood Denial of Service attack was performed from the Kali Linux VM `kali5` against `FsAskisi` to assess how excessive ICMP traffic could affect a host and the network availability.
 
 Steps followed to demonstrate the attack: 
 
@@ -184,7 +184,7 @@ a) From the Kali Linux VM, ran the following command against the isolated target
 ```bash
 sudo hping3 -1 --flood 192.168.10.99
 ```
-b) Started Wireshark on `FsAskisi` and applied an ICMP filter to capture incoming Echo Request traffic.
+b) Started Wireshark on `FsAskisi` and applied an ICMP filter to capture incoming Echo Request traffic
 and observed a sustained stream of ICMP Echo Request packets arriving.
 
 The ICMP flood test was performed to demonstrate how an attacker could generate a large volume of ICMP traffic toward a target system and potentially affect its availability by consuming network or host resources. This highlights the importance of limiting unnecessary ICMP traffic through firewall rules, applying ICMP rate limiting to prevent excessive traffic, and monitoring the network for unusually high ICMP traffic levels.
@@ -193,23 +193,23 @@ The ICMP flood test was performed to demonstrate how an attacker could generate 
 
 ### 10. Man in the Middle (MITM) Attack Demonstration
 
-The final penetration testing activity was a controlled man in the middle attack against `FsAskisi` using Ettercap from the Kali Linux VM.
+The final penetration testing activity was a controlled man in the middle attack against `FsAskisi` using Ettercap from the `kali5` VM.
 
 Steps followed to demonstrate the attack: 
 
 a) Opened Ettercap on the Kali Linux VM and selected the eth0 network interface.
 
-b) Performed host discovery to identify systems available on the internal network.
+b) Performed host discovery to identify systems available on the network.
 
 c) Selected ` 192.168.10.99 = FsAskisi ` as the target system.
 
-d) Configured the target and initiated an ARP based man in the middle attack from the Kali Linux VM.
+d) Configured the target and initiated an ARP based man in the middle attack.
 
 e) On the target VM, opened Command Prompt and ran:
 ```cmd
 arp -a
 ``` 
-f) Verified that the default gateway IP address was associated with the MAC address of the Kali Linux VM.
+f) Verified that the default gateway IP address was associated with the MAC address of the `kali5` VM.
 
 The ARP table on the target VM showed that the gateway IP address had been associated with the Kali Linux VM’s MAC address. This confirmed that ARP spoofing had altered the target’s local ARP mapping and that traffic intended for the gateway could be redirected through the Kali Linux VM that has the attacker role.
 
