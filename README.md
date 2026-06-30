@@ -8,7 +8,7 @@ A cybersecurity risk assessment lab that simulates an internal assessment of an 
 
 ## Porject Summary 
 
-This project simulates how an organisation can assess its internal infrastructure to understand what assets exist, what security weaknesses affect them, what services are exposed, and which risks should be prioritised.
+This project simulates how an organisation can assess its infrastructure to understand what assets exist, what security weaknesses affect them, what services are exposed, and which risks should be prioritised.
 
 I first discovered active systems in the internal network using Advanced IP Scanner. I then used Total Network Inventory to collect asset informations. After the inventory stage, I performed vulnerability scanning with Tenable Nessus in the subnet. The scan identified vulnerabilities, missing patches, exposed services, CVSS scores and operating system information.
 
@@ -35,9 +35,9 @@ Asset Discovery: Inventory Collection -> Vulnerability Scanning -> Automated Ris
 | Machine / System         | Operating System                 | Role                                                                                                                                                                                                            |
 | ------------------------ | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `VM-AUDIT`          | Windows 10 Pro                      | Main assessment workstation used for Advanced IP Scanner, Total Network Inventory 6, Tenable Nessus Essentials, Python automation, and review of the generated Excel risk assessment reports                    |
-| `Kali5`          | Kali Linux                       | Internal penetration testing machine used for SMB access validation, MAC flooding, MITM testing, and Nmap enumerations.                                                               |
+| `Kali5`          | Kali Linux                       | Internal penetration testing machine used for SMB access validation, MAC flooding, MITM testing, and Nmap .                                                               |
 | `FsAskisi`              | Windows Server 2019      | Primary target for internal penetration testing, including SMB access validation, MAC flooding, MITM testing, and Wireshark packet capture and traffic analysis.                                                                                |
-| `Additional Windows VMs` | Windows 10 and Windows Server 2019 | Additional in-scope systems used to populate the subnet and provide multiple assets, operating systems, installed software, services, and vulnerability findings for Advanced IP Scanner, TNI, and Nessus scans |
+| `Additional Windows VMs` | Windows 10 and Windows Server 2019 | Additional systems used to populate the subnet and provide multiple assets, operating systems, installed software, services, and vulnerability findings for Advanced IP Scanner, TNI, and Nessus scans |
 
 
 ---
@@ -46,10 +46,15 @@ Asset Discovery: Inventory Collection -> Vulnerability Scanning -> Automated Ris
 ### 1. VM-AUDIT Setup
 
 Created a Windows 10 virtual machine in Hyper-V to use as the main assessment workstation. Installed and used: 
+
 a) Advanced IP Scanner
+
 b) Total Network Inventory
+
 c) Tenable Nessus Essentials
+
 d) Python and the Python libraries for report generation
+
 e) LibreOffice for reviewing the generated xlsx files
 
 ---
@@ -72,7 +77,7 @@ This scan provided a broader asset management view than just a network discovery
 
 ### 4. Vulnerability Scanning with Tenable Nessus 
 
-Performed a vulnerability basic scan on the subnet: `192.168.10.0/24`. After the scan, I exported Nessus the below HTML reports:
+Performed a vulnerability basic scan on the subnet: `192.168.10.0/24`. After the scan, I exported from Nessus the below HTML reports:
 
 a) Vulnerabilities report
 b) Operating Systems report
@@ -82,10 +87,9 @@ c) Software Vulnerabilities report
 
 ### 5. Python Reporting Automation
 
-Developed a Python script that processes Nessus and Advanced IP Scanner HTML exports and automatically creates GRC style Excels that are ready to present to the organization the risk assessment is done for.
+Developed a Python script that processes Nessus and Advanced IP Scanner HTML exports and automatically creates GRC style Excels that are ready to present to the organization that the risk assessment is done for.
 
-The script accepts: A Nessus Vulnerabilities HTML report, a Nessus Operating Systems HTML report and a Advanced IP Scanner HTML report <br>
-and it generates 4 Excel files: 
+The script accepts: a Nessus Vulnerabilities HTML report, a Nessus Operating Systems HTML report, an Advanced IP Scanner HTML report and it generates 4 Excel files: 
 | Deliverable                          | Purpose                                                        |
 | ------------------------------------ | -------------------------------------------------------------- |
 | Asset Inventory                      | Lists discovered assets and classifies asset types             |
