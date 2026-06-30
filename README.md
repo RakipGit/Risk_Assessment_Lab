@@ -228,7 +228,9 @@ The Excel deliverables translate technical findings into prioritised risks and t
 
 ### 3. Discovering active assets with Advanced IP Scanner.
 
-
+![Advanced IP Scanner Scan](images/IP-SCAN.png)
+![Advanced IP Scanner Export](images/REPORT-ADV-IP.png)
+![Advanced IP Scanner Export](images/REPORT-ADV-IP2.png)
 
 </details>
 
