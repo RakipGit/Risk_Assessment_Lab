@@ -211,4 +211,38 @@ The Excel deliverables translate technical findings into prioritised risks and t
 
 ## Screenshots
 
+---
+
+## Tools & Technologies
+
+- Advanced IP Scanner 
+- Total Network Inventory
+- Tenable Nessus
+- Kali Linux
+- Nmap
+- Wireshark
+- Pyhton
+
+---
+
+## Security Concepts Demonstrated
+
+
+
+---
+
+## Copyright Notice
+
+All content and visuals in this repository are original and may not be reused without permission.
+
+
+## Rakip 
+
+ICT Engineering | Cybersecurity & Network Security
+
+---
+
+
+
+
 
