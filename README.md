@@ -322,7 +322,11 @@ Risk Assesment Excel
 ![KALI-VM-IP](images/servicestxt.png)
 ![KALI-VM-IP](images/scantxt.png)
 
+### 10. Chekcing where the SMB servie that uses port 445 is open.
 
+![SMB](images/smb1.png)
+![SMB](images/smb2.png)
+![SMB](images/smb3.png)
 
 </details>
 
