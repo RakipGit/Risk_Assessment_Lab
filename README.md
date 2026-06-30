@@ -248,20 +248,30 @@ I FORGOT TO TAKE SCREENSHOTS :)...you can navigate to my other project named: ` 
 For this scan the steps were: New Scan > Basic scan > added the subnet 192.168.19.0/24 as the target and then executed the scan.
 
 After the scan was completed, I exported these 3 html reports: 
-- Vulnerabilities.html
+
+Vulnerabilities.html
 ![Nessus HTML Exports](images/vulne-html.png)
 ![Nessus HTML Exports](images/vulne-html2.png)
 
-- Operating-system.html
+Operating-system.html
 ![Nessus HTML Exports](images/os-html.png)
 ![Nessus HTML Exports](images/os-html2.png)
 
-- Software-vulnerabilities.html
+Software-vulnerabilities.html
 ![Nessus HTML Exports](images/soft-html.png)
 
+### 6. Running the Python automation script to generate Excel risk assessment reports.
 
+First I added the .py code I wrote into the same file with the reports
+![Python Script Execution](images/FILE-CODE.png)
 
+Then, into cmd I navigated into the file path and I downloaded the required python packets to execute and generate the xlsx files.
+![Python Script Execution](images/CMD-CD.png)
+![Python Script Execution](images/CMD1-PACKET.png)
+![Python Script Execution](images/CMD2-PACKET.png)
 
+And finally run the command: `py -3.11 excel_parser.py --vulnerabilities "RAKIP_vulnerbilities.html" --os "RAKIP_operating_systems.html" --advip "RAKIP_adv-ip_scan.html" --out-prefix "RAKIP" ` that calls the html reports and generates the new excel files with the information the called files got.
+![Python Script Execution](images/CMD-RUNCODE.png)
 
 
 </details>
