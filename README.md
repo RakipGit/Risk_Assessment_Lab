@@ -355,6 +355,7 @@ Before starting the MAC attack I had to enable MAC Spoofing on my KALI-VM Hyper-
 ![MAC Flooding](images/enabling-MAC-spoofing.png)
 
 Launching the MAC attack.
+
 ![MAC Flooding](images/mac1.png)
 ![MAC Flooding](images/mac2.png)
 
