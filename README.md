@@ -211,6 +211,25 @@ The Excel deliverables translate technical findings into prioritised risks and t
 
 ## Screenshots
 
+![Active Directory Lab Architecture](images/LAB-ARCHITECTURE.png)
+
+<details>
+<summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
+
+### 1. Installing Windows Server 2019 for the Domain Controller and Windows 10  for the client VM.
+
+![Windows Server Installation](images/WindowsServer2019.png)
+![Windows 10 Installation](images/Windows10.png)
+
+### 2. Hyper-V VM Domain Controller Creation.
+
+![VM Creation](images/DC.png)
+![VM Creation](images/DC2.png)
+![VM Creation](images/DC3.png)
+
+
+
+</details>
 ---
 
 ## Tools & Technologies
@@ -240,8 +259,19 @@ The Excel deliverables translate technical findings into prioritised risks and t
 
 ## Insights & Lessons Learned
 
+- Using Advanced IP Scanner showed me how asset discovery provides the first visibility into what systems are active within an internal network.
+- Using Total Network Inventory helped me understand the value of inventory collection for identifying operating systems, installed software, users, services, and update information across multiple systems.
+- Performing the Nessus scans showed how vulnerability scanners can identify missing patches, exposed services, software vulnerabilities, and configuration weaknesses.
+- Reviewing CVSS scores and Nessus findings helped me understand how technical vulnerabilities can be prioritised based on severity and potential impact.
+- Developing Python automation to process Nessus HTML reports showed how repetitive security reporting tasks can be converted into structured Excel deliverables for easier review and presentation. Also Creating Asset Inventory, Threat Catalogue, Risk Assessment, and Risk Treatment Plan files helped me understand how technical findings can be translated into business oriented risk information.
+- Performing Nmap host discovery and service enumeration demonstrated how an attacker or security assessor can identify exposed services such as SMB, RDP, WinRM, LDAP etc.
+- Testing SMB access showed that an open service is not automatically insecure, but weak Guest permissions and shared folder access can expose internal data.
+- Performing MAC flooding demonstrated how abnormal traffic can be generated inside a network and why switch level controls and network monitoring are important.
+- Performing an DoS ICMP flood test showed how a large volume of traffic can be directed toward a host and potentially affect availability by consuming network or system resources.
+- The MITM test demonstrated how ARP spoofing can alter local ARP mappings and redirect internal traffic through an attackers controlled system.
+- Using Wireshark during the attack simulations helped me understand how packet captures can provide evidence of abnormal traffic and activity.
 
-
+  
 ---
 
 ## Copyright Notice
