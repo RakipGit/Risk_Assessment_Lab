@@ -237,7 +237,7 @@ The Excel deliverables translate technical findings into prioritised risks and t
 ![TNI Scan Setup](images/TNI1.png)
 ![TNI Scan Setup](images/TNI2.png)
 ![TNI Scan Setup](images/TNI3.png)
-![TNI Scan Setup](images/TNI4.png)
+![TNI Scan Setup](images/TN4.png)
 ![TNI Results](images/REPORT-TNI.png)
 
 </details>
