@@ -232,6 +232,12 @@ The Excel deliverables translate technical findings into prioritised risks and t
 ![Advanced IP Scanner Export](images/REPORT-ADV-IP.png)
 ![Advanced IP Scanner Export](images/REPORT-ADV-IP2.png)
 
+### 4. Collecting asset inventory data with Total Network Inventory 6.
+
+![TNI Scan Setup](images/TNI1.png)
+![TNI Scan Setup](images/TNI2.png)
+![TNI Results](images/TNIResults.png)
+
 </details>
 
 ---
