@@ -336,7 +336,7 @@ First, SMB exposure and anonymous access behaviour were checked across multiple 
 
 ![SMB](images/smb-5checks.png)
 
-After reviewing the results, I focused the SMB testing on `FSASKISI2` = `192.168.10.99`.
+After reviewing the results, I focused the SMB testing on `FsAskisi` = `192.168.10.99`.
 ![SMB](images/smb-enu-anony.png)
 
 ### 12. Validating SMB access and Guest share permissions.
@@ -344,11 +344,11 @@ After reviewing the results, I focused the SMB testing on `FSASKISI2` = `192.168
 ![SMB](images/smb-accessed.png)
 ![SMB](images/smb-accessed2.png)
 
-The SMB testing confirmed that the Guest account could access shared files on `FSASKISI2` = `192.168.10.99` . Using Guest credentials, I was able to list the share contents, retrieve the `shared.txt` file, and read it successfully from the Kali Linux VM. This confirmed unauthorised read access to data exposed through the SMB share.
+The SMB testing confirmed that the Guest account could access shared files on `FsAskisi` = `192.168.10.99` . Using Guest credentials, I was able to list the share contents, retrieve the `shared.txt` file, and read it successfully from the Kali Linux VM. This confirmed unauthorised read access to data exposed through the SMB share.
 
 ### 13. Demonstrating MAC flooding and capturing traffic in Wireshark.
 
-Searching for the MAC Address of the `FSASKISI2` = `192.168.10.99` machine.
+Searching for the MAC Address of the `FsAskisi` = `192.168.10.99` machine.
 ![MAC Flooding](images/macadd-vm.png)
 
 Before starting the MAC attack I had to enable MAC Spoofing on my KALI-VM Hyper-V virtual machine.
@@ -359,10 +359,25 @@ Launching the MAC attack.
 ![MAC Flooding](images/mac1.png)
 ![MAC Flooding](images/mac2.png)
 
-Wireshark was opened on the target VM, `FSASKISI2` = `192.168.10.99`, during the MAC flooding test. The capture showed a rapid stream of incoming Layer2 traffic with changing source MAC addresses, confirming that the generated traffic reached the target system.
+Wireshark was opened on the target VM, `FsAskisi` = `192.168.10.99`, during the MAC flooding test. The capture showed a rapid stream of incoming Layer2 traffic with changing source MAC addresses, confirming that the generated traffic reached the target system.
 
 ![MAC Flooding](images/mac-wireshark.png)
   
+### 14. Demonstrating an DoS ICMP flood attack.
+
+The ICMP flood test was performed from the Kali Linux VM using Hping3 against `FsAskisi` = `192.168.10.99`. Wireshark was running on the target VM during the test and captured a sustained stream of ICMP Echo Request packets, confirming that the high volume ICMP traffic reached the target system.
+
+![ICMP Flood Command](images/normal-DoS.png)
+![ICMP Flood Command](images/DoS-flooging-start.png)
+
+Wireshark results
+![ICMP Flood Wireshark Capture](images/wireshark-DoS-results.png)
+
+
+Stopping the attack
+![ICMP Flood Command](images/DoS-flooding-end.png)
+
+
 
 </details>
 
