@@ -308,8 +308,19 @@ Risk Assesment Excel
 ![Risk Assessment Report](images/riskexcel5.png)
 ![Risk Assessment Report](images/riskexcel6.png)
 
+### 8. Performing internal host discovery and service enumeration with Kali Linux and creating a .txt file to save those informations.
 
+![KALI-VM-IP](images/kali1.png)
+![kali-linux](images/kali2.png)
+![kali-linux](images/kali3.png)
+![kali-linux](images/kali4.png)
+![kali-linux](images/kali5.png)
 
+### 8. Creating a second .txt to save service informations only about the 5 VMs of my network so I can do the pen testing on them.
+
+![KALI-VM-IP](images/kali6.png)
+![KALI-VM-IP](images/servicestxt.png)
+![KALI-VM-IP](images/scantxt.png)
 
 
 
