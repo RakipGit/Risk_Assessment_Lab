@@ -459,7 +459,7 @@ The default gateway of the attacked VM `FsAskisi` = `192.168.10.99` is now attac
 - Using Total Network Inventory helped me understand the value of inventory collection for identifying operating systems, installed software, users, services, and update information across multiple systems.
 - Performing the Nessus scans showed how vulnerability scanners can identify missing patches, exposed services, software vulnerabilities, and configuration weaknesses.
 - Reviewing CVSS scores and Nessus findings helped me understand how technical vulnerabilities can be prioritised based on severity and potential impact.
-- Developing Python automation to process Nessus HTML reports showed how repetitive security reporting tasks can be converted into structured Excel deliverables for easier review and presentation. Also Creating Asset Inventory, Threat Catalogue, Risk Assessment, and Risk Treatment Plan files helped me understand how technical findings can be translated into business oriented risk information.
+- Developing Python automation to process Nessus HTML reports showed how repetitive security reporting tasks can be converted into structured Excel deliverables for easier review and presentation.
 - Performing Nmap host discovery and service enumeration demonstrated how an attacker or security assessor can identify exposed services such as SMB, RDP, WinRM, LDAP etc.
 - Testing SMB access showed that an open service is not automatically insecure, but weak Guest permissions and shared folder access can expose internal data.
 - Performing MAC flooding demonstrated how abnormal traffic can be generated inside a network and why switch level controls and network monitoring are important.
