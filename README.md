@@ -328,6 +328,23 @@ Risk Assesment Excel
 ![SMB](images/smb2.png)
 ![SMB](images/smb3.png)
 
+### 11. SMB Enumeration and Anonymous Access Validation.
+
+First, SMB exposure and anonymous access behaviour were checked across multiple internal hosts.
+![SMB](images/smbinfo.png)
+
+
+![SMB](images/smb-5checks.png)
+
+After reviewing the results, I focused the SMB testing on `FSASKISI2` = `192.168.10.99`.
+![SMB](images/smb-enu-anony.png)
+
+
+![SMB](images/smb-accessed.png)
+![SMB](images/smb-accessed2.png)
+
+The SMB testing confirmed that the Guest account could access shared files on `FSASKISI2` = `192.168.10.99` . Using Guest credentials, I was able to list the share contents, retrieve the `shared.txt` file, and read it successfully from the Kali Linux VM. This confirmed unauthorised read access to data exposed through the SMB share.
+
 </details>
 
 ---
