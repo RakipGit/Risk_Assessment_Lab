@@ -285,19 +285,27 @@ Asset Inventory Excel
 
 
 
+Threat Catalogue Excel
 
 ![Threat Catalogue Report](images/threatexcel1.png)
 ![Threat Catalogue Report](images/threatexcel2.png)
 ![Threat Catalogue Report](images/threatexcel3.png)
 ![Threat Catalogue Report](images/threatexcel4.png)
 
+Risk Treatment Excel 
+
+![Risk Treatment Plan](images/risktreat1.png)
+![Risk Treatment Plan](images/risktreat2.png)
+![Risk Treatment Plan](images/risktreat3.png)
+![Risk Treatment Plan](images/risktreat4.png)
 
 
-
-
-
+Risk Assesment Excel
 ![Risk Assessment Report](images/threatexcel1.png)
-![Risk Treatment Plan](images/threatexcel1.png)
+
+
+
+
 
 
 </details>
