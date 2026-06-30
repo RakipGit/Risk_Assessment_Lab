@@ -133,7 +133,7 @@ This demonstrated that overly Guest access and share permissions can expose inte
 --- 
 
 
-### 8. MAC Flooding Attack Demonstration
+### 8. MAC Attack Demonstration
 
 Performed a controlled MAC flooding attack from Kali Linux against the `FsAskisi` VM environment.
 
@@ -143,7 +143,11 @@ a) Enabled MAC address spoofing on the Kali Linux VM.
 
 b) Started Wireshark on the target machine, `FsAskisi`, before launching the attack.
 
-c) Ran the following command on the cmd: `sudo macof -i eth0` on Kali Linux<br>
+c) Ran the following command on the cmd:<br> 
+```bash 
+sudo macof -i eth0` on Kali Linux
+```
+
 The command generated Ethernet frames with changing source MAC addresses.
 
 d) Observed and captured the resulting ARP broadcasts and abnormal incoming in Wireshark on `FsAskisi`.
@@ -152,7 +156,14 @@ The MAC flooding test was performed to demonstrate how an internal attacker coul
 
 ----
 
-### 9. 
+### 9. DoS Attack Demonstration
+
+A controlled ICMP Flood Denial of Service attack was performed from the Kali Linux VM against FsAskisi to assess how excessive ICMP traffic could affect a host and the network availability.
+
+Steps followed to demonstrate the attack: 
+
+a) 
+b) Started Wireshark on FsAskisi2 and applied an ICMP filter to capture incoming Echo Request traffic.
 
 
 
