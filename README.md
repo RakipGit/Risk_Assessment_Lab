@@ -17,7 +17,9 @@ To convert the scan results into useful risk assessment deliverables, I develope
 2) Threat Catalogue.xlsx
 3) Information Security Risk Assessment.xlsx
 4) Risk Treatment Plan.xlsx
-   
+
+To validate selected findings beyond automated scanning, I also used Kali Linux to perform internal penetration testing against an isolated target system. This included Nmap host and service enumeration, SMB share and Guest access validation, MAC flooding, DoS ICMP flood testing, and an ARP based man in the middle attack using Ettercap. These activities were used to demonstrate how selected weaknesses could be identified and exploited, while Wireshark packets provided evidence of the resulting traffic and attack behaviour.
+
 ---
 
 ## Assessment Scope and Workflow
@@ -198,4 +200,15 @@ The ARP table on the target VM showed that the gateway IP address had been assoc
 The MITM attack demonstrated how ARP spoofing can redirect internal traffic through an attacker-controlled system. This highlights the importance of using HTTPS instead of HTTP, keeping TLS certificates valid and up to date, and avoiding self signed certificates for services where trusted certificates can be used. These controls help protect traffic from interception even if an attacker gains a man in the middle position on the network.
 
 ---
+
+## Project Purpose
+
+The purpose of the automated Excel reports and internal penetration testing activities was to give the organisation a structured overview of its security posture within the agreed assessment scope. The assessment identifies the assets present in the environment, the vulnerabilities and security weaknesses affecting them, the services exposed to internal users, and selected ways in which those weaknesses could be exploited by an attacker.
+
+The Excel deliverables translate technical findings into prioritised risks and the penetration testing activities provide practical evidence of how selected weaknesses, such as weak SMB access controls, ARP spoofing exposure, or excessive network traffic, could affect confidentiality, integrity, or availability. Together, these outputs help the organisation understand what is wrong, how selected weaknesses could be abused from within the network, and which security controls or remediation actions should be considered to strengthen the environment.
+
+---
+
+## Screenshots
+
 
