@@ -113,3 +113,17 @@ Examples of identified services: SMB — TCP/445, RDP — TCP/3389, WinRM — TC
 The service results were exported to services-scan-target.txt and used to identify systems and services for further internal security validation, including SMB access checks.
 
 ---
+
+### 7. 
+
+Performed SMB enumeration against systems exposing TCP/445. The checks included: 
+a) SMB signing status and SMBv1 status
+b) Hostname and domain information
+c) Guest account access behaviour
+d) Accessible SMB shares
+e) Read permissions on the exposed shares
+
+This demonstrated that overly Guest access and share permissions can expose internal data to unauthorised users on the same network. Some systems returned NT_STATUS_ACCESS_DENIED, showing that SMB was available but anonymous share enumeration was restricted.
+
+--- 
+
