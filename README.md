@@ -143,9 +143,9 @@ a) Enabled MAC address spoofing on the Kali Linux VM.
 
 b) Started Wireshark on the target machine, `FsAskisi`, before launching the attack.
 
-c) Ran the following command on the cmd:<br> 
+c) Ran the following command on the Kali Linux VM cmd:<br> 
 ```bash 
-sudo macof -i eth0` on Kali Linux
+sudo macof -i eth0`
 ```
 
 The command generated Ethernet frames with changing source MAC addresses.
@@ -162,8 +162,23 @@ A controlled ICMP Flood Denial of Service attack was performed from the Kali Lin
 
 Steps followed to demonstrate the attack: 
 
-a) 
-b) Started Wireshark on FsAskisi2 and applied an ICMP filter to capture incoming Echo Request traffic.
+a) From the Kali Linux VM, ran the following command against the isolated target `FsAskisi`:
+```bash
+sudo hping3 -1 --flood 192.168.10.99
+```
+b) Started Wireshark on `FsAskisi` and applied an ICMP filter to capture incoming Echo Request traffic.
+and observed a sustained stream of ICMP Echo Request packets arriving.
+
+The ICMP flood test was performed to demonstrate how an attacker could generate a large volume of ICMP traffic toward a target system and potentially affect its availability by consuming network or host resources. This highlights the importance of limiting unnecessary ICMP traffic through firewall rules, applying ICMP rate limiting to prevent excessive traffic, and monitoring the network for unusually high ICMP traffic levels.
+
+---
+
+### 10. Man in the Middle (MITM) Attack Demonstration
+
+The final penetration testing activity was a controlled man in the middle attack against `FsAskisi` using Ettercap from the Kali Linux VM.
+
+Steps followed to demonstrate the attack: 
+
 
 
 
