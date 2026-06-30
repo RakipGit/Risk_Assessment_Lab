@@ -179,7 +179,23 @@ The final penetration testing activity was a controlled man in the middle attack
 
 Steps followed to demonstrate the attack: 
 
+a) Opened Ettercap on the Kali Linux VM and selected the eth0 network interface.
 
+b) Performed host discovery to identify systems available on the internal network.
 
+c) Selected ` 192.168.10.99 = FsAskisi ` as the target system.
 
+d) Configured the target and initiated an ARP based man in the middle attack from the Kali Linux VM.
+
+e) On the target VM, opened Command Prompt and ran:
+```cmd
+arp -a
+``` 
+f) Verified that the default gateway IP address was associated with the MAC address of the Kali Linux VM.
+
+The ARP table on the target VM showed that the gateway IP address had been associated with the Kali Linux VM’s MAC address. This confirmed that ARP spoofing had altered the target’s local ARP mapping and that traffic intended for the gateway could be redirected through the Kali Linux VM that has the attacker role.
+
+The MITM attack demonstrated how ARP spoofing can redirect internal traffic through an attacker-controlled system. This highlights the importance of using HTTPS instead of HTTP, keeping TLS certificates valid and up to date, and avoiding self signed certificates for services where trusted certificates can be used. These controls help protect traffic from interception even if an attacker gains a man in the middle position on the network.
+
+---
 
