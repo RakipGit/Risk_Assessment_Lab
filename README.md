@@ -316,7 +316,7 @@ Risk Treatment Excel
 ![Risk Treatment Plan](images/risktreat4.png)
 
 
-Risk Assesment Excel
+Information Security Risk Assessment
 ![Risk Assessment Report](images/riskexcel1.png)
 ![Risk Assessment Report](images/riskexcel2.png)
 ![Risk Assessment Report](images/riskexcel3.png)
