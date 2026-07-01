@@ -541,7 +541,7 @@ py -3.11 -m pip install pandas beautifulsoup4 lxml openpyxl
 
 Place the Nessus HTML report exports in the same folder as the script. Replace the example filenames below with the names of your own exported HTML files, then run:
 
-``bash
+```bash
 py -3.11 excel_parser_v12.py --vulnerabilities "RAKIP_vulnerabilities.html" --os "RAKIP_operating_systems.html" --advip "RAKIP_adv-ip_scan.html" --out-prefix "RAKIP"
 ``
 
