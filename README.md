@@ -427,6 +427,66 @@ The default gateway of the attacked VM `FsAskisi` = `192.168.10.99` is now attac
 
 ---
 
+### Commands Used
+
+- Internal Host Discovery
+
+Performed a ping scan across the internal /24 subnet to identify live hosts without conducting port scans. The results were saved to host-discovery.txt.
+
+```bash
+sudo nmap -sn 192.168.10.0/24 -oN host-discovery.txt
+```
+
+- Servce enumeration on the 5 hosts.
+
+This command performed service detection and operating system detection against the 5 selected hosts. The results were saved to `service_scan_targets.txt`.
+
+```bash
+sudo nmap -sV -sC -O 192.168.10.99 192.168.10.100 192.168.10.101 192.168.10.105 192.168.10.147 -oN service_scan_targets.txt
+```
+
+- SMB Service Check
+
+Identified basic SMB configuration details such as the hostname, domain, SMB signing status, and SMBv1 support on the `FsAskisi` host.
+
+```bash
+nxc smb 192.168.10.99
+```
+
+- Anonymous SMB Share Enumeration
+  
+Attempted to list SMB shares on `FsAskisi` without supplying credentials, to assess whether anonymous share enumeration was permitted.
+
+```bash
+smbclient -L //192.168.10.99 -N
+```
+
+- Guest SMB Access Validation
+  
+Tested whether the Guest account could access SMB shares and identified permissions available to that account.
+
+```bash 
+nxc smb 192.168.10.99 -u '.\guest' -p '' --shares
+```
+
+- Accessing the Exposed SMB Shared files
+
+Connected to the accessible `file1hares` SMB share using the Guest account to validate whether files could be listed and retrieved.
+
+```bash
+smbclient -U 'guest' //192.168.10.99/fileshares
+```
+
+- Retrieved File Review
+
+Displayed the contents of the retrieved test file to confirm successful read access from the SMB share.
+
+```bash
+cat shared.txt
+```
+
+
+---
 
 ## Tools & Technologies
 
