@@ -427,7 +427,7 @@ The default gateway of the attacked VM `FsAskisi` = `192.168.10.99` is now attac
 
 ---
 
-### Commands Used
+## Commands Used
 
 - Internal Host Discovery
 
@@ -485,7 +485,46 @@ Displayed the contents of the retrieved test file to confirm successful read acc
 cat shared.txt
 ```
 
+- kali5 VM Network informations
 
+Verified the Kali Linux VM network interface, local IP address, default gateway and routing table. `kali5` was assigned `192.168.10.163/24` in the isolated `192.168.10.0/24` lab subnet.
+
+```bash
+ip a
+ip route
+```
+
+- Target Reachability
+
+Confirmed that `FsAsksis` = `192.168.10.99` was reachable and identified exposed services before the starting the pen testing security tests.
+
+```bash
+sudo nmap -Pn 192.168.10.99
+```
+
+- MAC Flooding Attack
+
+Generated high volume Ethernet traffic with changing source MAC addresses from the Kali Linux VM.
+
+```bash
+sudo macof -i eth0
+```
+
+- DoS ICMP Attack
+
+Generated a sustained high rate ICMP Echo Request stream from the `kali5` towards `FsAskisi`
+
+```bash
+sudo hping3 -1 --flood 192.168.10.99
+```
+
+- ARP Table Check
+
+Executed on FSASKISI2 after the MITM ARP attack to review the local ARP table and verify whether the gateway IP to MAC address mapping had changed.
+
+```bash
+arp -a
+```
 ---
 
 ## Tools & Technologies
