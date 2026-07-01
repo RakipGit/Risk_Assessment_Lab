@@ -338,7 +338,7 @@ Information Security Risk Assessment Excel
 ![KALI-VM-IP](images/servicestxt.png)
 ![KALI-VM-IP](images/scantxt.png)
 
-### 10. Chekcing where the SMB servie that uses port 445 is open.
+### 10. Chekcing where the SMB service that uses port 445 is open.
 
 ![SMB](images/smb1.png)
 ![SMB](images/smb2.png)
@@ -443,6 +443,14 @@ This command performed service detection and operating system detection against 
 
 ```bash
 sudo nmap -sV -sC -O 192.168.10.99 192.168.10.100 192.168.10.101 192.168.10.105 192.168.10.147 -oN service_scan_targets.txt
+```
+
+- Identyfying systems exposing SMB on TCP/445.
+
+After completing the targeted service enumeration, I reviewed the saved service-scan-target.txt results to identify systems exposing SMB on TCP/445. I used grep to filter the scan output for port 445, which helped me quickly identify the hosts that were suitable for further SMB security validation.
+
+```bash
+grep -B 3 -A 10 "445/tcp" services-scan-target.txt
 ```
 
 - SMB Service Check
