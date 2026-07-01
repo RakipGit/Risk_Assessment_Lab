@@ -431,7 +431,7 @@ The default gateway of the attacked VM `FsAskisi` = `192.168.10.99` is now attac
 
 - Internal Host Discovery
 
-Performed a ping scan across the internal /24 subnet to identify live hosts without conducting port scans. The results were saved to host-discovery.txt.
+Performed a ping scan across the subnet to identify live hosts without conducting port scans. The results were saved to `host-discovery.txt`.
 
 ```bash
 sudo nmap -sn 192.168.10.0/24 -oN host-discovery.txt
@@ -504,7 +504,7 @@ sudo nmap -Pn 192.168.10.99
 
 - MAC Flooding Attack
 
-Generated high volume Ethernet traffic with changing source MAC addresses from the Kali Linux VM.
+Generated high volume Ethernet traffic with changing source MAC addresses from the `kali5` .
 
 ```bash
 sudo macof -i eth0
@@ -520,7 +520,7 @@ sudo hping3 -1 --flood 192.168.10.99
 
 - ARP Table Check
 
-Executed on FSASKISI2 after the MITM ARP attack to review the local ARP table and verify whether the gateway IP to MAC address mapping had changed.
+Executed on `FsAskisi` after the MITM ARP attack to review the local ARP table and verify whether the gateway IP to MAC address mapping had changed.
 
 ```bash
 arp -a
