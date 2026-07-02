@@ -10,7 +10,7 @@ A cybersecurity risk assessment lab that simulates an internal assessment of an 
 
 This project simulates how an organisation can assess its infrastructure to understand what assets exist, what security weaknesses affect them, what services are exposed, and which risks should be prioritised.
 
-The main objective was to provide a structured, report based view of the organisation’s security posture and support its wider security and compliance efforts. The assessment outputs can help an organisation identify gaps, prioritise remediation actions, and maintain evidence that may support alignment with cybersecurity frameworks and regulatory requirements such as NIS2.
+The main objective was to provide a structured, report based view of the organisation’s security posture and support its wider security and compliance efforts. The assessment outputs can help an organisation identify gaps, prioritise remediation actions, and maintain evidence that can support future security reviews, audits, and decisions.
 
 I first discovered active systems in the internal network using Advanced IP Scanner. I then used Total Network Inventory to collect asset informations. After the inventory stage, I performed vulnerability scanning with Tenable Nessus in the subnet. The scan identified vulnerabilities, missing patches, exposed services, CVSS scores and operating system information.
 
