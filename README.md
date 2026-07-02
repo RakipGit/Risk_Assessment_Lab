@@ -227,7 +227,7 @@ The Excel deliverables translate technical findings into prioritised risks and t
 
 ## Screenshots
 
-![Active Directory Lab Architecture](images/logo.png)
+![Active Directory Lab Architecture](images/logo3.png)
 
 <details>
 <summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
