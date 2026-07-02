@@ -412,7 +412,6 @@ Stopping the attack:
 
 ![Ettercap MITM Setup](images/ett5b-chooseattack.png)
 
-![Ettercap MITM Setup](images/ett5-hostmenu.png)
 
 ![Ettercap MITM Setup](images/ett6-attack.png)
 
