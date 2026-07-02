@@ -2,7 +2,7 @@
 
 ## Risk Assessment Lab
 
-A cybersecurity risk assessment lab that simulates an internal assessment of an organisation’s infrastructure using Advanced IP Scanner, Total Network Inventory 6, Tenable Nessus Essentials, and Python automation that converts Tenable HTML reports into presentation ready Excel risk reports. The assessment also includes penetration testing focused on SMB access validation, MAC & DoS ICMP flooding and a MITM attack to evaluate the organisation’s internal network security posture support its wider security and compliance efforts. 
+A cybersecurity risk assessment lab that simulates an internal assessment of an organisation’s infrastructure using Advanced IP Scanner, Total Network Inventory 6, Tenable Nessus , and Python automation that converts HTML exports into presentation ready Excel risk reports. The assessment also includes penetration testing focused on SMB access validation, MAC & DoS ICMP flooding and a MITM attack to evaluate the organisation’s internal network security posture support its compliance efforts with frameworks, regulatory requirements and directives such as NIS2.
 
 ---
 
